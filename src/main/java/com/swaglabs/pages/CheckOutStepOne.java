@@ -19,6 +19,7 @@ public class CheckOutStepOne {
     private static WebElement continueBtn;
 
     public CheckOutStepOne(){
+
         PageFactory.initElements(driver,this);
     }
     public static void sendOrderInfo(String name,String lName,String zipCode){

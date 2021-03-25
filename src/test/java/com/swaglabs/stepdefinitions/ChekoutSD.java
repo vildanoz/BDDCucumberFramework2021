@@ -21,6 +21,7 @@ public class ChekoutSD {
 
     @When("user clicks on item with name {string}")
     public void userClicksOnItemWithName(String itemName) {
+
         HomePage.clickItem(itemName);
     }
 

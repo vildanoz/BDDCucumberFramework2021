@@ -8,8 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features={"src/test/resources/features"},
         glue={"com/swaglabs/stepdefinitions"},tags="@login",monochrome = true,
-        plugin={"pretty","html:target/site/cucumber-pretty.html"},
+        plugin={"pretty","html:target/site/cucumber-pretty.html","json:target/cucumber.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
+
         //checking if the steps are defined or not
         dryRun=true
 )

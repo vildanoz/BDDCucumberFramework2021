@@ -22,6 +22,7 @@ public class HomePage {
     }
 
     public static String verifyTitle(){
+
         return ElementUtil.doGetPageTitle();
     }
 
